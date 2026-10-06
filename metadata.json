@@ -1,0 +1,6 @@
+{
+  "name": "FreeAgentReach - Open Source Agent Internet CLI",
+  "description": "Zero-paid-API internet access CLI and MCP suite for Cursor, Claude Code, and autonomous coding agents with web search, YouTube transcripts, GitHub, RSS, local cookies, and doctor diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

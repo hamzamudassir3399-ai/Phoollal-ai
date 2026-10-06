@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-reach"
+version = "1.0.0"
+authors = [
+  { name="Open Source AI Agent Community", email="community@agentreach.dev" },
+]
+description = "Zero-paid-API internet access CLI and MCP suite for Cursor, Claude Code, and autonomous coding agents"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "httpx>=0.24.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.optional-dependencies]
+all = [
+    "duckduckgo-search>=6.0.0",
+    "yt-dlp>=2024.0.0",
+    "feedparser>=6.0.10",
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+agent-reach = "agent_reach.cli:main"
+agentreach = "agent_reach.cli:main"
